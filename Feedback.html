@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--*************************** meta data ***************************-->
+    <meta charset="UTF-8"> <!-- char  mode setting -->
+    <meta name="description" content="Online Read Bytes Book Store">
+    <meta name="keywords" content="CS Learn Books Computer Science AI internet app Algorthims Data structure Big Data">
+    <meta name="author" content="Fatimah Jabr , Raeda Azkoul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- for the CSS file -->
+    <script src="JS/javascript.js"></script> <!-- for the javascript file -->
+    <title>Read Bytes Feedback</title>
+</head>
+
+<body>
+    <!--*************************** menu bar ***************************-->
+    <nav class="navBar">
+        <img id="logo" src="images/readBytesLogo.png" alt="Read Bytes Logo" width="120">
+        <a href="index.html" class="NotSelected">Home</a> <!-- to go to the home page -->
+        <a href="Store.html" class="NotSelected">Store</a> <!-- to go to the Store page -->
+        <a href="Cart.html" class="NotSelected">Cart</a> <!-- to go to the Cart page -->
+        <a href="Feedback.html" class="selected">Feedback</a> <!-- to go to the Feedback page -->
+        <a href="LogIn.html" class="NotSelected">Log in</a> <!-- to go to the Log in page -->
+        <a href="SignUp.html" class="NotSelected">Sign Up</a> <!-- to go to the Signup  page -->
+        <input id="search" type="text" placeholder="Search.." onfocus="focused(this)" onblur="blurFunction(this)">
+    </nav>
+
+    <!--*************** main content *****************-->
+    <div class="clearfix">
+
+        <img id="feedbackPic" class="fade-in-left" src="images/FeedbackPic.jpg" alt="Form Page image" width="500">
+
+
+        <form id="Feedbackform" class="fadeInRight" onsubmit="return validateFormFeedBack()">
+            <table id="feedbackform">
+                <tr>
+                    <td>
+                        <label for="fname">First name:</label><br>
+                        <input class="txtfield" type="text" id="fname" name="fname" onfocus="focused(this)"
+                            onblur="blurFunction(this)">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Last name:</label><br>
+                        <input class="txtfield" type="text" id="lname" name="lname" onfocus="focused(this)"
+                            onblur="blurFunction(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Mobile number:</label><br>
+                        <input class="txtfield" type="text" id="MobileNumber" name="MobileNumber"
+                            onfocus="focused(this)" onblur="blurFunction(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Email">Email Address:</label><br>
+                        <input class="txtfield" type="text" id="Email" name="Email" onfocus="focused(this)"
+                            onblur="blurFunction(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="OrderNumber">Order number:</label><br>
+                        <input class="txtfield" type="text" id="OrderNumber" name="OrderNumber" onfocus="focused(this)"
+                            onblur="blurFunction(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="IssueType">Your issue type:</label><br>
+                        <select class="issuelist" name="IssueType" id="IssueType" form="Feedbackform">
+                            <optgroup label="product related">
+                                <option value="Service">Service related</option>
+                                <option value="RefundRequest">Refund request</option>
+                                <option value="Warranty">Warranty</option>
+                            </optgroup>
+                            <optgroup label="site related">
+                                <option value="Friends">Friends</option>
+                                <option value="website">website</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Write your message:</label><br>
+                        <textarea class="txtarea" name="msg" form="Feedbackform" onfocus="focused(this)"
+                            onblur="blurFunction(this)"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+
+
+    <!--*************************** footer ***************************-->
+    <footer>
+        <div class="footer">
+            <!-- footer container -->
+            <!-- socail media icons and its links -->
+            <a id="ig" class="socail fade-in-left" href="https://www.instagram.com/"><img src="images/instagram.png"
+                    alt="instagram" width="35"></a>
+            <a class="socail fade-in-left" href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"
+                    width="35"></a>
+            <a class="socail fade-in-left" href="https://www.facebook.com/"><img src="images/facebook.png"
+                    alt="facebook" width="35"></a>
+            <a class="socail fade-in-left" href="https://www.linkedin.com/"><img src="images/linkedIn.png"
+                    alt="linkedIn" width="35"></a>
+            <!-- Copyright -->
+            <p class="copy fadeInRight">Copyright &copy;2020 All Rights Reserved by
+                <a href="index.html">Read Bytes</a>.
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

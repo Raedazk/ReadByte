@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--*************************** meta data ***************************-->
+    <meta charset="UTF-8"> <!-- char  mode setting -->
+    <meta name="description" content="Online Read Bytes Book Store">
+    <meta name="keywords" content="CS Learn Books Computer Science AI internet app Algorthims Data structure Big Data">
+    <meta name="author" content="Fatimah Jabr , Raeda Azkoul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- for the CSS file -->
+    <script src="JS/javascript.js"></script> <!-- for the javascript file -->
+
+  <title>Read Bytes Store</title>
+</head>
+
+<body>
+ <!--*************************** menu bar ***************************-->
+    <nav class="navBar">
+        <img id="logo" src="images/readBytesLogo.png" alt="Read Bytes Logo" width="120">
+        <a href="index.html" class="NotSelected">Home</a> <!-- to go to the home page -->
+        <a href="Store.html" class="selected">Store</a> <!-- to go to the Store page -->
+        <a href="Cart.html" class="NotSelected">Cart</a> <!-- to go to the Cart page -->
+        <a href="Feedback.html" class="NotSelected">Feedback</a> <!-- to go to the Feedback page -->
+        <a href="LogIn.html" class="NotSelected">Log in</a> <!-- to go to the Log in page -->
+        <a href="SignUp.html" class="NotSelected">Sign Up</a> <!-- to go to the Signup  page -->
+        <input id="search" type="text" placeholder="Search.." onfocus="focused(this)" onblur="blurFunction(this)">
+    </nav>
+
+  <div class="with-sidebar">
+    <div>
+      <div class="sidebar">
+        <h3 class="subjects fade-in-left">Subjects</h3>
+        <ul class="subjectlist fade-in-left">
+          <li><a href="#Artificialintelligence">Artificial intelligence</a></li>
+          <li><a href="#DataBase">DataBase</a></li>
+          <li><a href="#Algorithms">Algorithms</a></li>
+          <li><a href="#Programming">Programming</a></li>
+          <li><a href="#Webdevelopment">Web development</a></li>
+          <li><a href="#Softwareengineering">Software engineering</a></li>
+          <li><a href="#Operatingsystems">Operating systems</a></li>
+        </ul>
+      </div>
+
+      <div class="not-sidebar">
+        <div>
+          <div>
+            <h3 class="fade-in-up" id="Artificialintelligence">Artificial intelligence</h3>
+            <hr>
+            <div class="newSection fade-in-up">
+              <div class="item">
+                <img class="bookimage" src="images/books/1.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Artificial intelligence<br>
+                    for Business
+                  </h6>
+                  <p class="price">$25.50</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/2.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Artificial intelligence<br>
+                    (3 Books in 1)</h6>
+                  <p class="price">$40.00</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/3.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Introduction to<br>
+                    Artificial intelligence</h6>
+                  <p class="price">$20.03</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/4.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Practical<br>
+                    Artificial intelligence</h6>
+                  <p class="price">$34.75</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h3 class="fade-in-up" id="DataBase">DataBase</h3>
+          <hr>
+          <div class="newSection fade-in-up">
+            <div class="item">
+              <img class="bookimage" src="images/books/5.jpg" alt="">
+              <div>
+                <h6 class="bookname">Database design<br>
+                  and implementaion
+                </h6>
+                <p class="price">$24.99</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/6.jpg" alt="">
+              <div>
+                <h6 class="bookname">Database systems<br>
+                  with case studies</h6>
+                <p class="price">$29.95</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/7.jpg" alt="">
+              <div>
+                <h6 class="bookname">Database<br> Management</h6>
+                <p class="price">$21.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/8.jpg" alt="">
+              <div>
+                <h6 class="bookname">SQL programming<br> for Beginners </h6>
+                <p class="price">$20.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <h3 class="fade-in-up" id="Algorithms">Algorithms</h3>
+            <hr>
+            <div class="newSection fade-in-up">
+              <div class="item">
+                <img class="bookimage" src="images/books/9.jpg" alt="">
+                <div>
+                  <h6 class="bookname"><br>Algorithms</h6>
+                  <p class="price">$31.50</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/10.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Algorithms<br>in a Nutshell</h6>
+                  <p class="price">$30.00</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/11.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Introduction to<br>Algorithms</h6>
+                  <p class="price">$39.00</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+              <div class="item">
+                <img class="bookimage" src="images/books/12.jpg" alt="">
+                <div>
+                  <h6 class="bookname">Real-World<br>Algorithms</h6>
+                  <p class="price">$21.00</p>
+                  <button class="addToCart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h3 class="fade-in-up" id="Programming">Programming</h3>
+          <hr>
+          <div class="newSection fade-in-up">
+            <div class="item">
+              <img class="bookimage" src="images/books/13.jpg" alt="">
+              <div>
+                <h6 class="bookname">Principles of<br>Programming Languages</h6>
+                <p class="price">$29.99</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/14.jpg" alt="">
+              <div>
+                <h6 class="bookname">The C++<br>programming Language</h6>
+                <p class="price">$24.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/15.jpg" alt="">
+              <div>
+                <h6 class="bookname">Python<br>(2 Books in 1)</h6>
+                <p class="price">$22.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/16.jpg" alt="">
+              <div>
+                <h6 class="bookname">Interactive OOP<br>in Java</h6>
+                <p class="price">$31.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <h3 class="fade-in-up" id="Webdevelopment">Web development</h3>
+          <hr>
+          <div class="newSection fade-in-up">
+            <div class="item">
+              <img class="bookimage" src="images/books/17.jpg" alt="">
+              <div>
+                <h6 class="bookname">Front-End<br>Developer Handbook</h6>
+                <p class="price">$40.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/18.jpg" alt="">
+              <div>
+                <h6 class="bookname">Web Standards Mastering<br> HTML5, CSS3, XML</h6>
+                <p class="price">$35.99</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/19.jpg" alt="">
+              <div>
+                <h6 class="bookname">PHP and MySQL<br>Web Development</h6>
+                <p class="price">$26.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/20.jpg" alt="">
+              <div>
+                <h6 class="bookname">Responsive<br>Web design</h6>
+                <p class="price">$27.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h3 class="fade-in-up" id="Softwareengineering">Software Engineering</h3>
+          <hr>
+          <div class="newSection fade-in-up">
+            <div class="item">
+              <img class="bookimage" src="images/books/21.jpg" alt="">
+              <div>
+                <h6 class="bookname"><br>Software Engineering</h6>
+                <p class="price">$39.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/22.jpg" alt="">
+              <div>
+                <h6 class="bookname"><br>Software Engineering</h6>
+                <p class="price">$40.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/23.jpg" alt="">
+              <div>
+                <h6 class="bookname">Agile<br> Software Engineering</h6>
+                <p class="price">$35.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/24.jpg" alt="">
+              <div>
+                <h6 class="bookname">Software Engineering<br>Best Practices</h6>
+                <p class="price">$28.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h3 class="fade-in-up" id="Operatingsystems">Operating systems</h3>
+          <hr>
+          <div class="newSection fade-in-up">
+            <div class="item">
+              <img class="bookimage" src="images/books/25.jpg" alt="">
+              <div>
+                <h6 class="bookname">Operating Systems<br>Concepts</h6>
+                <p class="price">$28.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/26.jpg" alt="">
+              <div>
+                <h6 class="bookname">UNIX<br>Operating Systems</h6>
+                <p class="price">$39.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/27.jpg" alt="">
+              <div>
+                <h6 class="bookname"><br>Operating Systems</h6>
+                <p class="price">$20.00</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <img class="bookimage" src="images/books/28.jpg" alt="">
+              <div>
+                <h6 class="bookname">Modern<br>Operating Systems</h6>
+                <p class="price">$23.73</p>
+                <button class="addToCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--*************************** footer ***************************-->
+    <footer>
+        <div class="footer">  <!-- footer container -->
+		<!-- socail media icons and its links -->
+            <a id="ig" class="socail fade-in-left" href="https://www.instagram.com/"><img src="images/instagram.png"
+                    alt="instagram" width="35"></a>
+            <a class="socail fade-in-left" href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"
+                    width="35"></a>
+            <a class="socail fade-in-left" href="https://www.facebook.com/"><img src="images/facebook.png"
+                    alt="facebook" width="35"></a>
+            <a class="socail fade-in-left" href="https://www.linkedin.com/"><img src="images/linkedIn.png"
+                    alt="linkedIn" width="35"></a>
+        <!-- Copyright -->
+            <p class="copy fadeInRight">Copyright &copy;2020 All Rights Reserved by
+                <a href="index.html">Read Bytes</a>.
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

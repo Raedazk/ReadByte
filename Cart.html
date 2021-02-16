@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--*************************** meta data ***************************-->
+  <meta charset="UTF-8"> <!-- char  mode setting -->
+  <meta name="description" content="Online Read Bytes Book Store">
+  <meta name="keywords" content="CS Learn Books Computer Science AI internet app Algorthims Data structure Big Data">
+  <meta name="author" content="Fatimah Jabr , Raeda Azkoul">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- for the CSS file -->
+  <script src="JS/javascript.js"></script> <!-- for the javascript file -->
+  <title>Read Bytes Cart</title>
+</head>
+
+<body>
+  <!--*************************** menu bar ***************************-->
+  <nav class="navBar">
+    <img id="logo" src="images/readBytesLogo.png" alt="Read Bytes Logo" width="120">
+    <a href="index.html" class="NotSelected">Home</a> <!-- to go to the home page -->
+    <a href="Store.html" class="NotSelected">Store</a> <!-- to go to the Store page -->
+    <a href="Cart.html" class="selected">Cart</a> <!-- to go to the Cart page -->
+    <a href="Feedback.html" class="NotSelected">Feedback</a> <!-- to go to the Feedback page -->
+    <a href="LogIn.html" class="NotSelected">Log in</a> <!-- to go to the Log in page -->
+    <a href="SignUp.html" class="NotSelected">Sign Up</a> <!-- to go to the Signup  page -->
+    <input id="search" type="text" placeholder="Search.." onfocus="focused(this)" onblur="blurFunction(this)">
+  </nav>
+  <!--*************************** main ***************************-->
+  <div class="fade-in-up">
+    <div id="page">
+      <table id="cart">
+        <thead>
+          <tr>
+            <th class="first">Product</th>
+            <th class="second">Quantity</th>
+            <th class="third">Type</th>
+            <th class="fourth">Price</th>
+            <th class="fifth">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- shopping cart contents -->
+          <tr class="productitm">
+            <td>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/books/17.jpg" alt="" width="180">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Front-End<br>Developer Handbook</h1>
+                    <p>Web Development</p>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td><input class="inputnum" type="number" value="1" min="0" max="99"></td>
+            <td class="itemType">
+              <div class="typealign">
+                <label class="radio radio-gradient">
+                  <span class="radio__input">
+                    <input type="radio" name="radio1">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">first hand</span>
+                </label>
+
+                <label class="radio radio-before">
+                  <span class="radio__input">
+                    <input type="radio" name="radio1">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">second hand</span>
+                </label>
+              </div>
+            </td>
+            <td>$40.00</td>
+            <td><input type="reset" class="remove" value="×"></td>
+          </tr>
+          <tr class="productitm">
+            <td>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/books/18.jpg" alt="" width="180">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Web Standards</h1>
+                    <p>Mastering HTML5, CSS, xml</p>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td><input class="inputnum" type="number" value="1" min="0" max="99"></td>
+            <td class="itemType">
+              <div class="typealign">
+                <label class="radio radio-gradient">
+                  <span class="radio__input">
+                    <input type="radio" name="radio">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">first hand</span>
+                </label>
+
+                <label class="radio radio-before">
+                  <span class="radio__input">
+                    <input type="radio" name="radio">
+                    <span class="radio__control"></span>
+                  </span>
+                  <span class="radio__label">second hand</span>
+                </label>
+              </div>
+            </td>
+            <td>$35.99</td>
+            <td><input type="reset" class="remove" value="×"></td>
+          </tr>
+
+          <tr class="checkoutrow">
+            <td colspan="5" class="total"><span> Total: $75.99</span></td>
+          </tr>
+
+          <tr class="checkoutrow">
+            <td colspan="5" class="checkout"><a id="submitbtn" href="#">Checkout Now!</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--*************************** footer ***************************-->
+  <footer>
+    <div class="footer">
+      <!-- footer container -->
+      <!-- socail media icons and its links -->
+      <a id="ig" class="socail fade-in-left" href="https://www.instagram.com/"><img src="images/instagram.png"
+          alt="instagram" width="35"></a>
+      <a class="socail fade-in-left" href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"
+          width="35"></a>
+      <a class="socail fade-in-left" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"
+          width="35"></a>
+      <a class="socail fade-in-left" href="https://www.linkedin.com/"><img src="images/linkedIn.png" alt="linkedIn"
+          width="35"></a>
+      <!-- Copyright -->
+      <p class="copy fadeInRight">Copyright &copy;2020 All Rights Reserved by
+        <a href="index.html">Read Bytes</a>.
+      </p>
+    </div>
+
+  </footer>
+</body>
+
+</html>

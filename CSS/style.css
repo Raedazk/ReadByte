@@ -1,0 +1,676 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+/* general styling for all HTML elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*the font settings for the all pages*/
+html,
+body {
+  font-family: "Bree Serif", Serif;
+  height: 100%;
+}
+/* ----------------------------------------------------- MENU BAR for all pages ------------------------------------------------------ */
+#search {
+  /*to set the dimentions of the searc field*/
+  border-radius: 25px; /*for rounded borders*/
+  border: 2px solid #c9c9c9; /*the style of the border*/
+  padding-left: 10px;
+  width: 300px;
+  height: 30px;
+  margin: 30px;
+  margin-right: 50px;
+}
+/*to make the border color change to purple when the mouse hover ov the serch field*/
+#search:focus {
+  border-color: #cc33cc;
+}
+/*seting the spacing and elements alignment in the menu bar */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px gray;
+  box-shadow: 0px 0px 5px 0px gray;
+  z-index: 1;
+}
+.navBar.Dont {
+  position: relative;
+  top: 0;
+}
+/*the dimentions of the logo pic*/
+#logo {
+  height: 80px;
+  margin: 10px;
+}
+/*styling the navigation links in the menu bar in all pages*/
+.navBar a {
+  margin: 40px 20px 40px 20px;
+  text-decoration: none;
+  padding: 5px 15px 5px 15px;
+  border: solid 1px #cc33cc00;
+  transition: all 0.5s ease-out;
+}
+/*changing the color of the  links in the menu bar when the mouse hovers over it*/
+.navBar a:hover {
+  border-color: #cc33cc;
+}
+/*to make the link that refrence the current page uniqe from the other*/
+.selected {
+  color: whitesmoke;
+  background-color: #cc33cc;
+  border-radius: 20px;
+}
+/*other pages don't get special styling*/
+.NotSelected {
+  color: #cc33cc;
+  border-radius: 20px;
+}
+
+/*---------------------------------------------------- FOOTER for all pages ----------------------------------------------------- */
+/*styling the div that contain the footer elements*/
+.footer {
+  clear: both; /*to fix the float problems*/
+  display: block;
+  position: static;
+  bottom: 0; /*to make the footer appears in the bottom of the page*/
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  padding: 30px 0px;
+}
+/*styling the socail media icons*/
+.socail {
+  margin: 15px;
+}
+/*styling the copy writes*/
+.copy {
+  display: inline;
+  float: right;
+  padding-right: 170px;
+}
+
+/*------------------------------------------------------------ HOME page ----------------------------------------------------------- */
+/* the postion of the home page pic */
+#Landing {
+  float: right;
+  margin-right: 8%;
+}
+/*to fix the float problems */
+.clearfix {
+  overflow: auto;
+  margin-top: 50px;
+}
+/*styling the main header  in the home page */
+.mainpage h1 {
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 50px;
+}
+/*styling the subtext in the home page */
+.mainpage p {
+  margin-left: 10%;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+/*to make the "shop now" link look like button*/
+.mainpage a {
+  margin: 40px 20px 40px 10%;
+  text-decoration: none;
+  padding: 5px 40px 5px 40px;
+  color: whitesmoke;
+  background-color: #cc33cc;
+  border-radius: 20px;
+}
+/*changing the color of "shop now" when the mouse hovers */
+.mainpage a:hover {
+  background-color: #701670;
+}
+
+/* ------------------------------------------------------ FEEDBACK page ----------------------------------------------------- */
+/* the postion of the feedback page pic */
+#feedbackPic {
+  float: left;
+  margin-left: 8%;
+}
+/* the postion of feedback form */
+#feedbackform {
+  float: right;
+  margin-right: 13%;
+}
+/*styling all text fields in the feedback form*/
+.txtfield {
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  width: 400px;
+  height: 25px;
+  margin: 10px 10px 10px 0px;
+}
+/*styling  textArea field in the feedback form*/
+.txtarea {
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  width: 400px;
+  height: 60px;
+  margin: 10px 10px 10px 0px;
+}
+/*styling list view in the feedback form*/
+.issuelist {
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 400px;
+  height: 25px;
+  margin: 10px 10px 10px 0px;
+}
+/*styling the submit button in the feedback form*/
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: none;
+  color: whitesmoke;
+  background-color: #cc33cc;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 400px;
+}
+/* changing color of the submit button when the mouse hovers*/
+input[type="submit"]:hover {
+  background-color: #701670;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------ Store page ------------------------------------------------------ */
+/* styling the subjects section */
+.subjects {
+  /* the margin of subjects section*/
+  margin: 20px 20px 20px 60px;
+}
+.subjects li {
+  /* the style of subjects list */
+  list-style: none;
+}
+.subjectlist a {
+  /*to change the default css of the link elements*/
+  margin: 40px 20px 40px 80px;
+  text-decoration: none;
+  line-height: 3;
+}
+.subjectlist a:link {
+  /*to change the default css of an unvisted link*/
+  color: black;
+}
+
+.subjectlist a:visited {
+  /*to change the default css of a visted link*/
+  color: black;
+}
+
+.subjectlist a:hover {
+  /* to change the color of the link when the mouse hovers*/
+  color: #cc33cc;
+}
+
+.subjectlist a:active {
+  color: #cc33cc;
+}
+/* to position the books in the books section*/
+.with-sidebar > * {
+  /*to affect all elements under it */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.with-sidebar > * > * {
+  /*to affect all elements under it */
+  margin: 0.5rem;
+  height: 100%;
+}
+.sidebar {
+  /* subjects section , on the left*/
+  flex-basis: 20rem;
+  flex-grow: 1;
+  height: 100%;
+  position: sticky;
+  top: 120px;
+  left: 0;
+}
+
+.not-sidebar {
+  /* books section , on the right*/
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 1rem);
+  border-left: solid 1px #c9c9c9;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.Section {
+  width: 100%;
+}
+.newSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newSection > * {
+  flex: 1 1 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+}
+/* indvisual store items */
+.item {
+  margin: 5px;
+  padding: 2px;
+}
+/*the dimentions of the book pic*/
+.bookimage {
+  height: 180px;
+}
+/*the setting of the book name in the store*/
+.bookname {
+  font-size: 15px;
+  margin: 5px 5px 5px 0px;
+}
+/*the setting of the price in the store*/
+.price {
+  color: #5e89ff;
+}
+/*the setting of the "add to cart" button in the store*/
+.addToCart {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  margin: 20px 20px 20px 20px;
+  padding: 5px 40px 5px 40px;
+  color: whitesmoke;
+  background-color: #cc33cc;
+  border-radius: 20px;
+  width: 150px;
+  transition-duration: 0.4s;
+}
+.addToCart:hover {
+  /* to change the color of the "add to cart" button when the mouse hovers*/
+  background-color: #701670;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------ Cart Page ------------------------------------------------------ */
+#page {
+  display: block;
+  padding: 15px 0;
+  flex-direction: row;
+}
+#cart {
+  display: block;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: #444;
+}
+/* styling the table that contain the items details */
+#cart thead th {
+  /*tabel header*/
+  padding: 15px 0;
+}
+#cart thead th td {
+  padding: 10px 10px;
+}
+#cart thead th.first {
+  width: 300px;
+}
+#cart thead th.second {
+  width: 130px;
+}
+#cart thead th.third {
+  width: 390px;
+}
+#cart thead th.fourth {
+  width: 240px;
+}
+#cart thead th.fifth {
+  width: 80px;
+}
+.itemType {
+  text-align: left;
+  line-height: normal;
+  position: relative;
+}
+/*to make the flip card effect*/
+#cart tbody td {
+  text-align: center;
+  margin-top: 4px;
+}
+tr.productitm {
+  height: 65px;
+  line-height: 65px;
+  border-bottom: 1px solid #d7dbe0;
+  padding: 10px;
+}
+.typealign {
+  padding-left: 80px;
+  text-align: left;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 180px;
+  height: 250px;
+  perspective: 1000px; /* 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #cc33cc;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* customing the radio buttona anf change the default settings */
+.radio {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.2em;
+  font-size: 1rem;
+  color: #3a123a;
+  margin: 5px;
+}
+.radio:focus-within .radio__label {
+  transform: scale(1.05);
+  opacity: 1;
+}
+/* customing the radio buttona anf change the default settings */
+.radio__label {
+  line-height: 1;
+  transition: 180ms all ease-in-out;
+  opacity: 0.8;
+}
+/* customing the radio button */
+.radio__input {
+  display: flex;
+  margin-right: 3px;
+}
+.radio__input input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.radio__input input:focus + .radio__control {
+  box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
+
+.radio-gradient input:checked + .radio__control {
+  background: radial-gradient(currentcolor 50%, rgba(255, 0, 0, 0) 51%);
+}
+/* customing the radio buttona anf change the default settings */
+.radio-before .radio__control {
+  display: grid;
+  place-items: center;
+}
+.radio-before input + .radio__control::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  box-shadow: inset 0.5em 0.5em currentColor;
+  border-radius: 50%;
+  transition: 180ms transform ease-in-out;
+  transform: scale(0);
+}
+.radio-before input:checked + .radio__control::before {
+  transform: scale(1);
+}
+.radio__control {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.1em solid currentColor;
+  transform: translateY(-0.05em);
+}
+
+/* end custom radio*/
+.remove {
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+  color: #9e1919;
+  border-color: #9e1919;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px 6px;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+}
+.remove:hover {
+  background: #9e1919;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.inputnum {
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50px;
+  height: 25px;
+  margin: 10px 10px 10px 0px;
+}
+.total {
+  color: #272727;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 20px;
+}
+
+#submitbtn {
+  /*styling the submit button*/
+  text-decoration: none;
+  padding: 5px 40px 5px 40px;
+  color: whitesmoke;
+  background-color: #cc33cc;
+  border-radius: 20px;
+}
+#submitbtn:hover {
+  /*to change the color of submit button when the mouse hover */
+  background-color: #701670;
+  cursor: pointer;
+}
+tr.checkoutrow {
+  border-top: 1px solid #c9c9c9;
+}
+td.checkout {
+  padding: 12px 0;
+  padding-top: 20px;
+  width: 100%;
+}
+
+/* ------------------------------------------------------ SignUp Page ------------------------------------------------------ */
+#SignUpImage {
+  /* setting the postion of the signup pic */
+  position: absolute;
+  left: 50%;
+  margin-left: -510px;
+}
+.signUpDiv {
+  /* styling signup div */
+  margin: auto;
+  width: 512px;
+  height: 512px;
+  position: relative;
+  margin-top: 70px;
+  padding: 10px;
+  text-align: center;
+}
+.signupbtn {
+  /* styling signup submit button */
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  margin: 20px 20px 20px 20px;
+  padding: 5px 40px 5px 40px;
+  color: whitesmoke;
+  background-color: #cc33cc;
+  border-radius: 20px;
+  width: 150px;
+  transition-duration: 0.4s;
+}
+.signupbtn:hover {
+  /*to change the color of submit button when the mouse hover */
+  background-color: #701670;
+  cursor: pointer;
+}
+.signUpDiv .textColor {
+  color: #cc33cc;
+}
+.signUpDiv .field {
+  border-radius: 25px;
+  border: 2px solid #cc33cc;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  /* background-color: white;*/
+}
+.signUpDiv .logtext {
+  color: dodgerblue;
+}
+/* ------------------------------------------------------ Login Page ------------------------------------------------------ */
+#login {
+  float: left;
+  margin-left: 12%;
+} /*to color and define the purple rectagle and set its padding , margin , color and raduis*/
+.container {
+  float: right;
+  padding: 50px 20px;
+  margin: 60px 40px;
+  margin-right: 250px;
+  background-color: #cc33cc;
+  border-radius: 20px;
+}
+/*to style the "login" input text fields,
+minlw the size and its dimentions*/
+.loginTxtField {
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  margin: 10px 0px;
+}
+/*to style the fields labels */
+.loginLbl {
+  margin-left: 65px;
+  color: white;
+  font-size: 15px;
+}
+/*to style the heading of the login*/
+.loginHeader {
+  margin-left: 70px;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 25px;
+}
+/*to style the login button */
+.loginButton {
+  appearance: none;
+  -webkit-appearance: none; /*remove default setting*/
+  padding: 5px 10px;
+  margin: 30px 0px;
+  border: none;
+  color: white;
+  background-color: #f6d146;
+  font-weight: 1000px;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+}
+/*small font size*/
+#rememberLbl,
+#register,
+.have {
+  font-size: 12px;
+}
+#remember {
+  width: 15px;
+}
+#register {
+  float: right;
+}
+#register:link {
+  color: #f6d146;
+}
+#register:visited {
+  color: #f6d146;
+}
+#register:active {
+  color: #f6d146;
+}
+/* -------------------------------------------- focus event handling ---------------------------------------- */
+
+.focus {
+  background-color: #f6d146 !important;
+}
+.blur {
+  background-color: white;
+}
+/* -------------------------------------------- validation event handling ---------------------------------------- */
+
+form input {
+  transition: all 1s ease-out;
+}
+/*the setting to happen when error accours*/
+.invalid {
+  --error-color: rgb(99, 0, 0);
+  --error-light-color: rgb(226, 164, 164);
+  color: var(--error-color);
+  background-color: var(--error-light-color);
+  border: solid 1px var(--error-color);
+}
+
+.form-validation-results {
+  /* display: none; */
+  --error-color: rgb(255, 125, 125);
+  color: var(--error-color);
+  font-size: 13px;
+}
